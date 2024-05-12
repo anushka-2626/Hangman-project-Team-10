@@ -369,3 +369,174 @@ body {
 .contents1 h5{
     font-size: 18px;
 }
+
+/*skills page*/
+.skills {
+    align-items: center;
+    margin: 10% 0 0 2.5%;
+}
+
+.contents2 {
+    text-align:center;
+    width: 500px;
+    height: 280px;
+    border:20px #1f1e1e solid; 
+    background-color: #feceab;
+    padding: 40px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}  
+
+.contents2 h2 {
+    color: #ff847c;  
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.contents2 h4{
+    font-size: 20px;
+    color:#fff;
+}
+
+.contents:hover,.contents1:hover,.contents2:hover {
+    background-color:#474747;
+}
+
+/*contact page*/
+.contact {
+    align-items: center;
+    margin: 10% 0 0 10%;
+}
+
+.contact h2 {
+    line-height: 100px;
+}
+
+.social-media-still a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ff847c;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #feceab;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--primary-color);
+    overflow: hidden;
+}
+
+.text-wrapper h1 {
+    font-size:500px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    padding: 0 1rem;
+    letter-spacing: 1px;
+    animation: move-rtl 10000ms linear infinite; 
+    font-family: 'Kaushan Script', cursive;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*keyframes animation*/
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes professionRotate {
+    0%,20% {
+        transform: rotate(0deg);
+    }
+    25%,45% {
+        transform: rotate(-90deg);
+    }
+    50%,70%% {
+        transform: rotate(-180deg);
+    }
+    75%,95% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
