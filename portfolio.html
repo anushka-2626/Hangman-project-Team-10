@@ -1,45 +1,83 @@
 <html>
+
     <head>
 
         <meta charset="UTF-8">
         <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Resume</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="final.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesomw/6.2.0/css/all.mis.css"
+
     </head>
+
     <body>
+
         <header class="header">
-            <a href="#" style='--i:0' class="logo">Resume Page.</a>
+            <a href="#" class="logo">Resume Page.</a>
 
             <nav class="navbar">
-                <a href="#s1" style="--i:1;" >Home</a>
-                <a href="#s2" style="--i:2;">About Me</a>
-                <a href="#s3" style="--i:3;">Skills</a>
-                <a href="#s4" style="--i:4;">Projects</a>
-                <a href="#s5" style="--i:5;">Contact</a>
+                <a href="resume.html" style="--i:1;" class="active">Home</a>
+                <a href="about.html" style="--i:2;">About Me</a>
+                <a href="experience.html" style="--i:3;">Experience</a>
+                <a href="skills.html" style="--i:4;">Skills</a>
+                <a href="contact.html" style="--i:5;">Contact</a>
+                <a class="toggle">
+                    <i class="bx bx-moon toggle-icon"></i>
+                </a>
             </nav>
-            <div class="toggle">
-                <i class="bx bx-moon toggle-icon"></i>
-            </div>
         </header>
+
         
-        <section class="home" id="s1">
-        <div class="home-line">
-        <div class="text-wrapper">
-            <h1>arielraymond</h1>
-            <h1>arielraymond</h1>
-            <h1>arielraymond</h1>
-            <h1>arielraymond</h1>
-            <h1>arielraymond</h1>
-        </div>
-        <div class="home-img">
-            <img src="input.png" alt="">
-        </div>
-    </div>
-   </body>
+
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello it's me</h3>
+                <h1>Ariel S. Raymond</h1>
+                <h3><span class="multiple-text"></Span></h3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.twitter.com/" style="--i:8;"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.linkedin.com/" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <div class="btnn">
+                <a href="#" class="btn">Download CV</a>
+                </div>
+            </div> 
+            
+            <div class="profession-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:0;">
+                        <i class="bx bx-code-alt"></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--i:1;">
+                        <i class="bx bx-camera"></i>
+                        <h3>Photographer</h3>
+                    </div>
+                    <div class="profession" style="--i:2;">
+                        <i class="bx bx-pallete"></i>
+                        <h3>Web Designer</h3>
+                    </div>
+                    <div class="profession" style="--i:3;">
+                        <i class="bx bx-video-recording"></i>
+                        <h3>Videographer</h3>
+                    </div>
+
+                    <div class="circle"></div>
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-img">
+                <img src="input1.png" alt="">
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="script.js"></script>
+        <script src="scriptone.js"></script>
+    </body>
 </html>
